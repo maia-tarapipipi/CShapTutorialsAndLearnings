@@ -1,0 +1,14 @@
+/Users/maiatarapipipi/workspace/dotnet/TestProject/bin/Debug/net7.0/TestProject
+/Users/maiatarapipipi/workspace/dotnet/TestProject/bin/Debug/net7.0/TestProject.deps.json
+/Users/maiatarapipipi/workspace/dotnet/TestProject/bin/Debug/net7.0/TestProject.runtimeconfig.json
+/Users/maiatarapipipi/workspace/dotnet/TestProject/bin/Debug/net7.0/TestProject.dll
+/Users/maiatarapipipi/workspace/dotnet/TestProject/bin/Debug/net7.0/TestProject.pdb
+/Users/maiatarapipipi/workspace/dotnet/TestProject/obj/Debug/net7.0/TestProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maiatarapipipi/workspace/dotnet/TestProject/obj/Debug/net7.0/TestProject.AssemblyInfoInputs.cache
+/Users/maiatarapipipi/workspace/dotnet/TestProject/obj/Debug/net7.0/TestProject.AssemblyInfo.cs
+/Users/maiatarapipipi/workspace/dotnet/TestProject/obj/Debug/net7.0/TestProject.csproj.CoreCompileInputs.cache
+/Users/maiatarapipipi/workspace/dotnet/TestProject/obj/Debug/net7.0/TestProject.dll
+/Users/maiatarapipipi/workspace/dotnet/TestProject/obj/Debug/net7.0/refint/TestProject.dll
+/Users/maiatarapipipi/workspace/dotnet/TestProject/obj/Debug/net7.0/TestProject.pdb
+/Users/maiatarapipipi/workspace/dotnet/TestProject/obj/Debug/net7.0/TestProject.genruntimeconfig.cache
+/Users/maiatarapipipi/workspace/dotnet/TestProject/obj/Debug/net7.0/ref/TestProject.dll
