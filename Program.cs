@@ -6,16 +6,25 @@ class Program
 {
   static void Main() 
   {
-    string[] fraudulentOrderID = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"};
+    
+    // Takes a string, reverses it and counts how many times 'o' appears
+    
+    string str = "The quick brown fox jumps over the lazy dog.";
 
-    foreach (string item in fraudulentOrderID)
+    char[] charMessage = str.ToCharArray();
+    Array.Reverse(charMessage);
+    
+    int charCount = 0;
+
+    foreach (char i in charMessage) 
     {
-      if (item.StartsWith("B"))
-      {
-        Console.WriteLine(item);
-      }
-    };
+      if (i == 'o') { charCount++; } 
+    }
 
+    string new_message = new String(charMessage);
+
+    Console.WriteLine(new_message);
+    Console.WriteLine($"'o' appears {charCount} times.");
   } 
   
 }
