@@ -4,29 +4,16 @@ using System;
 
 class Program
 {
-  static void Main(string[] args) 
+  static void Main() 
   {
-     Random random = new Random();
-    int daysUntilExpiration = random.Next(12);
-    int discountPercentage = 0;
-    
-    if (daysUntilExpiration >= 5 && daysUntilExpiration <= 10) 
-    {
-      System.Console.WriteLine("Your subscription will expire soon. Renew now!");
-    }
-    else if (daysUntilExpiration >= 2 && daysUntilExpiration <= 5) 
-    { 
-      System.Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days. Renew now and save 10%!");
-    }
-    else if (daysUntilExpiration == 1)
-    { 
-      System.Console.WriteLine("Your subscription expires within a day! Renew now and save 20%!");
-    }
-    else if (daysUntilExpiration == 0)
-    {
-      System.Console.WriteLine("Your subscription has expired.");
-    }
+    string[] fraudulentOrderIDs = new string[4];
 
+    fraudulentOrderIDs[0] = "A123";
+    fraudulentOrderIDs[1] = "B456";
+    fraudulentOrderIDs[2] = "C789";
+    fraudulentOrderIDs[3] = "D000";
+
+    
   } 
   
 }
