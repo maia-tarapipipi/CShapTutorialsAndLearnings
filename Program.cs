@@ -3,10 +3,28 @@ class Program
 {
   static void Main(string[] args)
     {
-        Random coin = new Random();
-        // int flip = coin.Next(0, 800);
+      string permission = "Admin|Manager";
+      int level = 21;
 
-        System.Console.WriteLine((coin.Next(0, 100) % 2 == 0 ? "heads" : "tails"));
+      if (level > 55 && permission == "Admin|Manager") 
+      {
+        System.Console.WriteLine("Welcome, Super Admin user.");
+      }
+      else if (level >= 21 && level <= 55 && permission == "Admin|Manager")
+      {
+        System.Console.WriteLine("Welcome Admin user.");
+      }
+      else if (level >= 1 && level <= 20 &&  permission == "Admin|Manager") 
+      {
+        System.Console.WriteLine("You do not have sufficient privileges.");
+      }
+      else 
+      {
+        System.Console.WriteLine("You do not have sufficient privileges.");
+      }
+
+
+
     }
 
 }
