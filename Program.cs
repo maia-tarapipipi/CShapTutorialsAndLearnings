@@ -3,16 +3,15 @@ class Program
 {
   static void Main(string[] args)
     {
-     bool flag = true;
-int value1 = 5;
+      int value = 1;
 
-if (value1 > 0)
-{
-    int value2 = 6;
-    value1 = value1 + value2;
+      if (value > 0)
+        {
+          int value2 = 8;
+          value = value + value2;
 
-}
-Console.WriteLine("Outside of code block: " + value1);
+        }
+        System.Console.WriteLine(value);
     }
 
 }
