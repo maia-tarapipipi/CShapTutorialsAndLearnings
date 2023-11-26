@@ -3,28 +3,16 @@ class Program
 {
   static void Main(string[] args)
     {
-      string permission = "Admin|Manager";
-      int level = 21;
+     bool flag = true;
+int value1 = 5;
 
-      if (level > 55 && permission == "Admin|Manager") 
-      {
-        System.Console.WriteLine("Welcome, Super Admin user.");
-      }
-      else if (level >= 21 && level <= 55 && permission == "Admin|Manager")
-      {
-        System.Console.WriteLine("Welcome Admin user.");
-      }
-      else if (level >= 1 && level <= 20 &&  permission == "Admin|Manager") 
-      {
-        System.Console.WriteLine("You do not have sufficient privileges.");
-      }
-      else 
-      {
-        System.Console.WriteLine("You do not have sufficient privileges.");
-      }
+if (value1 > 0)
+{
+    int value2 = 6;
+    value1 = value1 + value2;
 
-
-
+}
+Console.WriteLine("Outside of code block: " + value1);
     }
 
 }
