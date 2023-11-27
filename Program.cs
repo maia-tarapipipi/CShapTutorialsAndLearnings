@@ -3,40 +3,28 @@ class Program
 {
   static void Main(string[] args)
     {
-      
-      int heroHealth = 10;
-      int monsterHealth = 10;
-      Random attack = new Random();
-       
-     do
-     {
-      if (monsterHealth > 0)
+      // to read from the console the variable type must use a nullable string type as it can be both null and have value
+      string? readResult;
+      Console.WriteLine("Enter a string:");
+      bool validEntry = false;
+
+      do
       {
-        int damage = attack.Next(1, 10);
-        monsterHealth -= damage;
-        System.Console.WriteLine($"Monster was damaged and lost {damage} health and now has {monsterHealth} health.");
-        if (monsterHealth <= 0) 
+        readResult = Console.ReadLine();
+        if (readResult != null)
         {
-        System.Console.WriteLine("Hero Wins!");
+          if (readResult.Length >= 3)
+          {
+            validEntry = true; 
+            System.Console.WriteLine("You have typed a valid entry");
+          }
+          else 
+          {
+            validEntry = false;
+            System.Console.WriteLine("Your input is invalid, please try again");
+          }
         }
-      };
-       if (monsterHealth > 0)
-      {
-      int damage = attack.Next(1, 10);
-      heroHealth -= damage;
-      System.Console.WriteLine($"Hero was damaged and lost {damage} health and now has {heroHealth} health.");  
-      if (heroHealth <= 0 ){
-      System.Console.WriteLine("Monster Wins!");
-      }
-      };
-      
-     } while (monsterHealth > 0 && heroHealth > 0);
+      } while (readResult == null);
 
-
-
-      
-      
-
-    }
-
+    }     
 }
