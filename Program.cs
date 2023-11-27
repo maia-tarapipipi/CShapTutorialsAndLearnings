@@ -3,7 +3,8 @@ class Program
 {
   static void Main(string[] args)
     {
-      // do while / while loop
+      // --- CODE PROJECT 1: Validates Integer Input ---
+      /*
       string? readResult;
       bool validEntry = false;
 
@@ -33,5 +34,27 @@ class Program
       } while (validEntry == false);
 
       System.Console.WriteLine($"Your input of ({readResult}) has been accepted");
+      */
+
+      // --- CODE PROJECT 2: Validates String Input --- 
+
+      string? readResult;
+      bool permissions = false;
+      System.Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
+
+      do
+      {
+        readResult = Console.ReadLine();
+        string validResult = readResult.Trim().ToLower();
+        if (validResult == "administrator" || validResult  == "manager" || validResult == "user")
+        {
+          permissions = true;
+          System.Console.WriteLine($"Your input value ({validResult}) has been accepted.");
+        } else
+        {
+        System.Console.WriteLine($"The role name that you entered, \"{readResult}\" is not valid. Enter your role (Administrator, Manager, or User) Administrator");
+        }
+      } while (permissions == false);
+
     }     
 }
