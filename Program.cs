@@ -3,28 +3,30 @@ class Program
 {
   static void Main(string[] args)
     {
-      // to read from the console the variable type must use a nullable string type as it can be both null and have value
+      // do while / while loop
       string? readResult;
-      Console.WriteLine("Enter a string:");
       bool validEntry = false;
 
+   
+
+      System.Console.WriteLine("Please submit an integer between 5 and 10");
       do
       {
-        readResult = Console.ReadLine();
-        if (readResult != null)
-        {
-          if (readResult.Length >= 3)
-          {
-            validEntry = true; 
-            System.Console.WriteLine("You have typed a valid entry");
-          }
-          else 
-          {
-            validEntry = false;
-            System.Console.WriteLine("Your input is invalid, please try again");
-          }
-        }
-      } while (readResult == null);
+        readResult = System.Console.ReadLine();
+        int integer = 0;
+        bool validNumber = false;
+        validNumber = int.TryParse(readResult, out integer);
 
+        if (integer > 5 && integer < 10) 
+        { 
+          validEntry = true;
+        } else 
+        {
+          System.Console.WriteLine("The integer you have submitted is incorrect please submit a valid integer");    
+        }
+      
+      } while (validEntry == false);
+
+      System.Console.WriteLine("The integer you have submitted has been accepted");
     }     
 }
