@@ -52,7 +52,7 @@ class Program
           System.Console.WriteLine($"Your input value ({validResult}) has been accepted.");
         } else
         {
-        System.Console.WriteLine($"The role name that you entered, \"{readResult}\" is not valid. Enter your role (Administrator, Manager, or User) Administrator");
+        System.Console.WriteLine($"The role name that you entered, \"{readResult}\" is not valid. Enter your role (Administrator, Manager, or User)");
         }
       } while (permissions == false);
 
