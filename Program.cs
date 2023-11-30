@@ -37,7 +37,8 @@ class Program
       */
 
       // --- CODE PROJECT 2: Validates String Input --- 
-
+      
+      /*
       string? readResult;
       bool permissions = false;
       System.Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
@@ -55,6 +56,48 @@ class Program
         System.Console.WriteLine($"The role name that you entered, \"{readResult}\" is not valid. Enter your role (Administrator, Manager, or User)");
         }
       } while (permissions == false);
+      */
 
+      // --- CODE PROJECT 3: Processing strings in an array ---
+
+      // mandatory code from exercise
+    string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+    // int stringsCount = myStrings.Length;
+
+    string myString = "";
+    int periodLocation = 0;
+
+    for (int i = 0; i < myStrings.Length; i++)
+    {
+      myString = myStrings[i];
+      periodLocation = myString.IndexOf(".");
+          
+
+      string mySentence;
+
+      // extract sentences from each string and display them one at a time
+      while (periodLocation != -1)
+        {
+          // first sentence is the string value to the left of the period location
+          mySentence = myString.Remove(periodLocation);
+
+          // the remainder of myString is the string value to the right of the location
+          myString = myString.Substring(periodLocation + 1);
+
+          // remove any leading white-space from myString
+          myString = myString.TrimStart();
+
+          // update the comma location and increment the counter
+          periodLocation = myString.IndexOf(".");
+
+          Console.WriteLine(mySentence);
+        }
+
+      mySentence = myString.Trim();
+      Console.WriteLine(mySentence);
+    }
+    
+
+     
     }     
 }
