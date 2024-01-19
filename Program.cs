@@ -76,7 +76,7 @@ class Program
       string mySentence;
 
       // extract sentences from each string and display them one at a time
-      while (periodLocation != -1)
+     while (periodLocation != -1)
         {
           // first sentence is the string value to the left of the period location
           mySentence = myString.Remove(periodLocation);
@@ -91,7 +91,7 @@ class Program
           periodLocation = myString.IndexOf(".");
 
           Console.WriteLine(mySentence);
-        }
+        } ;
 
       mySentence = myString.Trim();
       Console.WriteLine(mySentence);
